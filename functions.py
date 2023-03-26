@@ -1,11 +1,11 @@
 # Libraries
 import chess
 import random
-import pandas as pd
 import chess.polyglot
 import chess
 import chess.svg
 from IPython.display import SVG
+import pandas as pd
 
 
 #%% Functions
@@ -69,4 +69,4 @@ def rand_board_moves(moves):
 
     # Return dataframe with the chosen move, the number of possible moves and all moves
     df = pd.DataFrame(data, columns=['Chosen Move', 'Number of Possible Moves', 'All Moves'])
-    return SVG(chess.svg.board(board=board, size=400))
+    return SVG(chess.svg.board(board, size=400, lastmove=board.peek()))
