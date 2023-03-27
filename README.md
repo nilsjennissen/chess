@@ -1,0 +1,1 @@
+Ressources: https://medium.com/analytics-vidhya/analyzing-chess-positions-with-python-26d73b7c892 
